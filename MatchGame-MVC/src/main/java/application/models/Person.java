@@ -16,7 +16,8 @@ public class Person implements Player {
 
     public Person() {
     }
-
+/**
+ * Ez a metódus valójában nincs alkalmazva ebben az applikációban, ez még az előző verzió "öröksége"*/
    public int pickSomeMatches(MatchBox matchBox){
         int pick;
 
