@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MatchGame MVC.iml" filepath="$PROJECT_DIR$/.idea/MatchGame MVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MatchGame-MVC/MatchGame-MVC.iml" filepath="$PROJECT_DIR$/MatchGame-MVC/MatchGame-MVC.iml" />
+    </modules>
+  </component>
+</project>

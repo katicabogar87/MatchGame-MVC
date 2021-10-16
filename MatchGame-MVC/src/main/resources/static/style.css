@@ -1,0 +1,182 @@
+
+
+{
+	box-sizing: border-box;
+}
+
+
+header {
+	font-family: 'Rye', cursive;
+	padding: 2px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	letter-spacing: 5px;
+	font-weight: bold;
+}
+
+body {
+	background-color: #FFCC99;
+	margin: 10px;
+	padding: 5px;
+}
+h1 {	
+	font-family: 'Rye', cursive;
+	margin-bottom: 30px;
+	padding-bottom: 5px;
+	border-bottom: solid black 2px;
+	
+}
+h2 {font-size: 15px;
+	font-family: 'Rye', cursive;
+	margin-bottom: 30px;
+	padding-bottom: 5px;
+	border-bottom: solid black 1px;
+}
+
+
+
+
+
+
+
+menu {
+	font-family: 'Fuggles', cursive;
+	text-align: center;
+	padding: 10px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	border-bottom: solid black 2px;
+	
+}
+.map {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-family: 'Fuggles', cursive;
+	text-align: left;
+	padding: 10px;
+	margin: 0;
+	
+}
+
+
+.map {
+	align-items:center;
+}
+
+.sideBySide {
+	display: flex;
+	justify-content: flex-start;
+}
+
+a {
+	font-family: 'Fuggles', cursive;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	padding: 5px 4px;
+	text-decoration: none;
+	color:  #2D5372;
+	font-size: 18px;
+	font-family: 'Philosopher', sans-serif;
+	font-weight: bold;
+}
+
+.current {
+    background-color: rgba(255, 255, 255, 0.5);
+	background-color: #FFF4BD;
+}
+
+a:hover {
+	background-color:  #2D5372;
+	color: gold;
+}
+
+main {
+	padding: 0 0;
+	font-size: 18px;
+	line-height: 1.4;
+	font-family: 'Fuggles', cursive;
+	text-align: justify;
+    overflow: auto;
+}
+
+
+
+footer {
+	
+	margin: 5px 0 0 0;
+	padding: 5px;
+	background-color: #2D5372;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 12px;
+	font-style: italic;
+	color: gold;
+	
+}
+
+
+
+.site {
+	position: relative;
+	width: 800px;
+	margin: 0 auto 0 auto;
+	font-family: 'Philosopher', sans-serif;
+}
+
+img.captainsPic {
+	border: 1px solid #fff;
+	padding: 5px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	float: right;
+	width: 30%;
+	height: auto;
+}
+img.captainsPic:hover {
+  box-shadow: 0 0 4px 2px  #8a0303;
+}
+
+img.map {
+	width: 20%;
+	height: auto;
+	border: 1px solid #fff;
+	padding: 5px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	float: right;
+	
+
+	
+	
+}
+
+img.map:hover {
+	transform: scale(6);
+}
+
+#deal{
+	margin: 0;
+	padding: 0;
+	font-size:40px;
+	font-family: 'Fuggles', cursive;
+	letter-spacing: 5px;
+	text-align: center;
+	
+}
+li.captains {
+	font-size: 30px;
+	color: #8a0303;
+}
+
+
+
+
+
+
