@@ -10,14 +10,4 @@ public class StaticController {
     public String getHomePage() {
         return "index";}
 
-    /*@GetMapping(value = { "/setup"})
-    public String getSetupPage() {
-        return "setup";
-    }
-
-    @GetMapping(value = { "/game"})
-    public String getGamePage() {
-        return "game";
-    }*/
-
 }
