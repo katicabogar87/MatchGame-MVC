@@ -25,7 +25,7 @@ public class WebSecConfig extends WebSecurityConfigurerAdapter {
                 // következő: bejelentkezett felhasználó ÉS READ joga van
                 .antMatchers("/game").hasAuthority("ADD")
                 // következő: bejelentkezett, tök mindegy, milyen joggal
-                .antMatchers("/welcomeUser").authenticated()
+               // .antMatchers("/welcomeUser").authenticated()
                 // következő: bárki (nem kell bejelentkezés sem)
                 .anyRequest().permitAll();
     }
