@@ -10,4 +10,6 @@ public class StaticController {
     public String getHomePage() {
         return "index";}
 
+
+
 }

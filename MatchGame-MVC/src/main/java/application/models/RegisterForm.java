@@ -9,9 +9,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class LoginForm {
+public class RegisterForm {
 
     private String username;
     private String password;
+    private String passwordSecond;
+    private  int age;
 
 }

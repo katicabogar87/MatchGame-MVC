@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>Welcome</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <!-- fonts -->
@@ -20,13 +22,18 @@
         <img src = /img/matches.jpg alt = "matches" >
     </div>
 
-
-
-    <h2>Start new game!</h2>
-    <div id="content">
-        <a data-th-href="@{/setup}">Click here</a>
-
+    <div>
+        <p class="num_text" data-th-text="${username}"></p>
+        <p class="num_text" data-th-text="${password}"></p>
+        <a class="button" data-th-href="@{/game}">
+            Let's play!
+        </a>
     </div>
+
+   <!-- <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>-->
 
 </div>
 
