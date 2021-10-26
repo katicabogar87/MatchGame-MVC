@@ -22,6 +22,14 @@ public class User implements UserDetails {
         isEnabled = true;
     }
 
+    public User(String username, String password, int age) {
+        this.username = username;
+        this.password = password;
+        this.age = age;
+        role= UserRole.USER;
+        isEnabled = true;
+    }
+
     public User(String username, String password, int age, UserRole role) {
         this.username = username;
         this.password = password;
