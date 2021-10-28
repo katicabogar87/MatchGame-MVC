@@ -35,7 +35,7 @@ public class RegisterController {
         model.addAttribute("password", registerForm.getPassword());
         model.addAttribute("age", registerForm.getAge());
         //validateFields
-        User user = new User(registerForm.getUsername(), registerForm.getPassword(), registerForm.getAge(), UserRole.USER);
+        User user = new User(registerForm.getUsername(), registerForm.getPassword(), registerForm.getAge(), UserRole.USER, "READ");
 
         userController.getRegisteredUsers().add(user);
 

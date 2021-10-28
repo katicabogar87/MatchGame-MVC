@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="hun">
+
+<head>
+    <title>gameForUser</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Philosopher&family=Rye&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="page">
+
+    <div id="header">
+        <h1>Don't pick the last match!</h1>
+        <img src = /img/matches.jpg alt = "matches" >
+    </div>
+
+
+    <h2 class="num_text" data-th-text="${playerName}"> </h2>
+    <p class="num_text" data-th-text="${difficulty}"> </p>
+
+    <h2> Current number of matches: </h2>
+
+    <div>
+        <h2 class="num_text" data-th-text="${currentMatches}">        </h2>
+    </div>
+
+
+        <div>
+            <h2 class="num_text" data-th-text="${winner}"> </h2>
+            <p>Do you want to play again?</p>
+            <a data-th-href="@{/rematch}">New game</a>
+        </div>
+
+     </div>
+
+     </body>
+
+     </html>

@@ -15,7 +15,9 @@ public class Robot implements Player {
     private String name="robot";
     private Strategy strategy;
 
-    public Robot() {}
+    public Robot() {
+        strategy = Strategy.ONE_BY_ONE;
+    }
 
     public int pickSomeMatches(MatchBox matchBox) {
 

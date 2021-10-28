@@ -15,6 +15,7 @@ public class User implements UserDetails {
     private int age;
 
     private UserRole role;        // values can be: WRITE / READ / DELETE / ADD
+    private String stringRole;
 
     private boolean isEnabled;
 
@@ -27,14 +28,16 @@ public class User implements UserDetails {
         this.password = password;
         this.age = age;
         role= UserRole.USER;
+        stringRole = "READ";
         isEnabled = true;
     }
 
-    public User(String username, String password, int age, UserRole role) {
+    public User(String username, String password, int age, UserRole role, String stringRole) {
         this.username = username;
         this.password = password;
         this.age = age;
         this.role = role;
+        this.stringRole = "ADD";
         isEnabled = true;
     }
 
@@ -43,10 +46,14 @@ public class User implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<SimpleGrantedAuthority> list = new ArrayList<>();
 
-        for (UserAuthority auth : role.AUTHORITIES) {
+        SimpleGrantedAuthority authority = new SimpleGrantedAuthority(stringRole);
+
+        list.add(authority);
+
+        /*for (UserAuthority auth : role.AUTHORITIES) {
             SimpleGrantedAuthority authority = new SimpleGrantedAuthority(auth.toString());
             list.add(authority);
-        }
+        }*/
             return list;
     }
 

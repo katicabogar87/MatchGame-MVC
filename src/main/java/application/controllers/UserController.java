@@ -18,8 +18,8 @@ public class UserController {
     private List <User> registeredUsers=new ArrayList<>();
 
     private void addExampleUsers(){
-        User firstUser = new User("firstUser", "password", 20, UserRole.USER);
-        User admin = new User("admin" , "password", 30, UserRole.ADMIN);
+        User firstUser = new User("firstUser", "password", 20, UserRole.USER, "READ");
+        User admin = new User("admin" , "password", 30, UserRole.ADMIN, "ADD");
         registeredUsers.add(firstUser);
         registeredUsers.add(admin);
     }

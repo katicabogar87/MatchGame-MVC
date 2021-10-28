@@ -40,6 +40,17 @@ public class GameController {
         return "game";
     }
 
+    @GetMapping(value ="/gameForUser")
+    public String getGameForUserPage(@ModelAttribute("gameForm") GameForm form, Model model) {
+        model.addAttribute("playerName", "Hello, " + person.getName() + " !");
+        model.addAttribute("difficulty", "Difficulty level: " + (robot.getStrategy().ordinal() +1));
+        String currentMatches = service.getCurrentNumOfMatches();
+        model.addAttribute("currentMatches", matchBox.getCurrentNumOfMatches());
+
+
+        return "gameForUser";
+    }
+
 
 
     @PostMapping(value = { "/game"})
